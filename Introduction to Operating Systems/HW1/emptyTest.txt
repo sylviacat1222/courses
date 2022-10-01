@@ -1,0 +1,27 @@
+         ? (     ?   ): emptyTest/15047  ... [continued]: execve()) = 0
+     0.047 ( 0.002 ms): emptyTest/15047 brk(                                                                  ) = 0xa31000
+     0.076 ( 0.006 ms): emptyTest/15047 access(filename: 0x28bfbd24                                           ) = -1 ENOENT No such file or directory
+     0.091 ( 0.003 ms): emptyTest/15047 access(filename: 0x28bfe4e0, mode: R                                  ) = -1 ENOENT No such file or directory
+     0.100 ( 0.005 ms): emptyTest/15047 open(filename: 0x28bfc1d1, flags: CLOEXEC                             ) = 3
+     0.106 ( 0.003 ms): emptyTest/15047 fstat(fd: 3, statbuf: 0x7fff93f7ca40                                  ) = 0
+     0.111 ( 0.004 ms): emptyTest/15047 mmap(len: 90239, prot: READ, flags: PRIVATE, fd: 3                    ) = 0x7f9628dea000
+     0.116 ( 0.002 ms): emptyTest/15047 close(fd: 3                                                           ) = 0
+     0.124 ( 0.002 ms): emptyTest/15047 access(filename: 0x28bfbd24                                           ) = -1 ENOENT No such file or directory
+     0.132 ( 0.004 ms): emptyTest/15047 open(filename: 0x28e03d60, flags: CLOEXEC                             ) = 3
+     0.137 ( 0.003 ms): emptyTest/15047 read(fd: 3, buf: 0x7fff93f7cbf8, count: 832                           ) = 832
+     0.142 ( 0.002 ms): emptyTest/15047 fstat(fd: 3, statbuf: 0x7fff93f7ca90                                  ) = 0
+     0.145 ( 0.003 ms): emptyTest/15047 mmap(len: 4096, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS            ) = 0x7f9628de9000
+     0.151 ( 0.005 ms): emptyTest/15047 mmap(len: 3971488, prot: EXEC|READ, flags: PRIVATE|DENYWRITE, fd: 3   ) = 0x7f9628812000
+     0.159 ( 0.009 ms): emptyTest/15047 mprotect(start: 0x7f96289d2000, len: 2097152                          ) = 0
+     0.169 ( 0.006 ms): emptyTest/15047 mmap(addr: 0x7f9628bd2000, len: 24576, prot: READ|WRITE, flags: PRIVATE|DENYWRITE|FIXED, fd: 3, off: 1835008) = 0x7f9628bd2000
+     0.179 ( 0.003 ms): emptyTest/15047 mmap(addr: 0x7f9628bd8000, len: 14752, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS|FIXED) = 0x7f9628bd8000
+     0.189 ( 0.002 ms): emptyTest/15047 close(fd: 3                                                           ) = 0
+     0.202 ( 0.003 ms): emptyTest/15047 mmap(len: 4096, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS            ) = 0x7f9628de8000
+     0.208 ( 0.002 ms): emptyTest/15047 mmap(len: 4096, prot: READ|WRITE, flags: PRIVATE|ANONYMOUS            ) = 0x7f9628de7000
+     0.212 ( 0.002 ms): emptyTest/15047 arch_prctl(option: 4098, arg2: 140282907494144                        ) = 0
+     0.287 ( 0.011 ms): emptyTest/15047 mprotect(start: 0x7f9628bd2000, len: 16384, prot: READ                ) = 0
+     0.303 ( 0.008 ms): emptyTest/15047 mprotect(start: 0x600000, len: 4096, prot: READ                       ) = 0
+     0.318 ( 0.010 ms): emptyTest/15047 mprotect(start: 0x7f9628e01000, len: 4096, prot: READ                 ) = 0
+     0.331 ( 0.020 ms): emptyTest/15047 munmap(addr: 0x7f9628dea000, len: 90239                               ) = 0
+     0.416 (     ?   ): emptyTest/15047 exit_group(                                                           )
+
